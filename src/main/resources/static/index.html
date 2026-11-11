@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnnapurnaPay - Merchant Portal</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="portal-container">
+    <!-- Left Hero Section -->
+    <div class="hero-section">
+        <div class="brand">
+            <div class="brand-logo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 19H22L12 2Z" fill="white"/>
+                    <path d="M12 8L6 19H18L12 8Z" fill="#ff7043"/>
+                </svg>
+            </div>
+            <span class="brand-name">Annapurna<span>Pay</span></span>
+        </div>
+
+        <div class="hero-content">
+            <span class="tag">MERCHANT PORTAL</span>
+            <h1 class="headline">
+                Your money,<br>
+                at the speed of<br>
+                <span class="accent-text">your business.</span>
+            </h1>
+            <p class="subheadline">
+                Track settlements in real time, withdraw instantly, and watch every payment channel in one calm dashboard.
+            </p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="quote">
+                "We reconciled months of accounts in one afternoon after switching. It genuinely changed how we run the store."
+            </p>
+            <p class="author">&mdash; Meera Krishnan, Bloom & Co</p>
+        </div>
+    </div>
+
+    <!-- Right Login Form Section -->
+    <div class="form-section">
+        <div class="form-wrapper">
+            <a href="#" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to site
+            </a>
+
+            <div class="form-header">
+                <h2>Log in to your dashboard</h2>
+                <p>Welcome back. Enter your merchant credentials.</p>
+            </div>
+
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="you@store.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                        <polyline points="10 17 15 12 10 7"></polyline>
+                        <line x1="15" y1="12" x2="3" y2="12"></line>
+                    </svg>
+                    Log in
+                </button>
+            </form>
+
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+            <button type="button" id="demoMerchantBtn" class="btn btn-demo">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 16v-4"></path>
+                    <path d="M12 8h.01"></path>
+                </svg>
+                Log in as Demo Merchant
+            </button>
+
+            <div class="form-footer">
+                <p>New to AnnapurnaPay? <a href="/signup.html" class="link-signup">Create a merchant account</a></p>
+                <div class="security-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" style="margin-right: 6px;">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                    Protected by 256-bit encryption & brute-force lockout
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
