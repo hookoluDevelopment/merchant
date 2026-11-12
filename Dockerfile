@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------------------
-# Stage 1: Build the application with Maven & Java 17
+# Stage 1: Build the application with Maven & Java 8
 # ------------------------------------------------------------------------------
-FROM maven:3.9.6-eclipse-temurin-17 AS build
+FROM maven:3.8.8-eclipse-temurin-8 AS build
 WORKDIR /app
 
 # Copy pom.xml and download dependencies to leverage Docker layer caching
@@ -15,7 +15,7 @@ RUN mvn package -DskipTests
 # ------------------------------------------------------------------------------
 # Stage 2: Create lightweight runtime container
 # ------------------------------------------------------------------------------
-FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:8-jre-alpine
 WORKDIR /app
 
 # Copy built JAR from stage 1

@@ -1,22 +1,27 @@
 package org.hookolupay.merchant.dto;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 public class SignupRequest {
-    private String nameAsPerAadhaar;
-    private String panCardNo;
-    private String aadhaarNo;
-    private String mobileNo;
-    private String emailId;
-    private String bankAccountNo;
-    private String ifscCode;
-    private String presentAddress;
-    private String permanentAddress;
-    private Integer age;
-    private String password;
-    private String confirmPassword;
+    public String nameAsPerAadhaar;
+    public String panCardNo;
+    public String aadhaarNo;
+    public String mobileNo;
+    public String emailId;
+    public String bankAccountNo;
+    public String ifscCode;
+    public String presentAddress;
+    public String permanentAddress;
+    public Integer age;
+    public String password;
+    public String confirmPassword;
 }
