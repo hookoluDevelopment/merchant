@@ -1,4 +1,4 @@
-const API_BASE = '/api/auth';
+/*const API_BASE = '/api/auth';
 
 function showView(viewId) {
     document.querySelectorAll('.view').forEach(v => v.classList.add('hidden'));
@@ -50,3 +50,4 @@ async function handleSignup(event) {
             <li><strong>Registered Email ID:</strong> ${data.emailId}</li>
         `;
         document.getElementById('totp-secret-key').innerText = data.totpSecret
+		*/
